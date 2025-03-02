@@ -1,0 +1,72 @@
+name: Bug Report
+description: Report a bug
+title: "[Bug]: "
+labels: ["needs-triage"]
+body:
+  - type: input
+    id: title
+    attributes:
+      label: Summary
+      description: "A brief summary of the bug"
+      placeholder: "e.g., xxx method raises an exception when yyy"
+    validations:
+      required: true
+
+  - type: textarea
+    id: description
+    attributes:
+      label: Description
+      description: "Detailed description of the bug"
+      placeholder: "Explain the issue in detail..."
+    validations:
+      required: true
+
+  - type: textarea
+    id: expected-behavior
+    attributes:
+      label: Expected Behavior
+      description: "What you expected to happen"
+      placeholder: "Describe what you expected to happen"
+    validations:
+      required: false
+
+  - type: textarea
+    id: context
+    attributes:
+      label: Context
+      description: "How has this issue affected you? What are you trying to accomplish?"
+      placeholder: "Providing context helps us come up with a solution that is most useful in the real world"
+    validations:
+      required: false
+
+  - type: textarea
+    id: possible-solution
+    attributes:
+      label: Possible Solution
+      description: "Optional: suggest a fix/reason for the bug or ideas on how to implement the addition or change"
+    validations:
+      required: false
+
+  - type: textarea
+    id: steps-to-reproduce
+    attributes:
+      label: Steps to reproduce
+      description: "How to reproduce the bug"
+      placeholder: |
+        1. ...
+        2. ...
+        3. ...
+    validations:
+      required: true
+
+  - type: textarea
+    id: environment
+    attributes:
+      label: Your Environment
+      description: "Include as many relevant details about the environment you experienced the bug in"
+      placeholder: |
+        Operating System: ...
+        Package version: ...
+        ...
+    validations:
+      required: true
