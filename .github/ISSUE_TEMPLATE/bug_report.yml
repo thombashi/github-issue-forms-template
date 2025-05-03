@@ -66,9 +66,10 @@ body:
       description: "What operating system are you using?"
       multiple: false
       options:
-        - Windows
-        - macOS
+        - Please select an option
         - Linux
+        - macOS
+        - Windows
         - Other
     validations:
       required: true
