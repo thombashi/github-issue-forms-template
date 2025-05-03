@@ -59,13 +59,27 @@ body:
     validations:
       required: true
 
+  - type: dropdown
+    id: operating-system
+    attributes:
+      label: Operating System
+      description: "What operating system are you using?"
+      multiple: false
+      options:
+        - Windows
+        - macOS
+        - Linux
+        - Other
+    validations:
+      required: true
+
   - type: textarea
     id: environment
     attributes:
       label: Your Environment
       description: "Include as many relevant details about the environment you experienced the bug in"
       placeholder: |
-        Operating System: ...
+        Runtime: ...
         Package version: ...
         ...
     validations:
